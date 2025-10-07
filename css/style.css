@@ -51,7 +51,7 @@ header .menu a {
 }
 
 .top {
-    background-image: url("/img/header.webp");
+    background-image: url("https://ctf.francescomancuso.it/tpsit/pizzeriaWeb/img/header.webp");
 }
 
 .top .overlay {

@@ -146,17 +146,17 @@ header .container {
 }
 
 .pagina .sezione.pizze .titolo {
-    background-image: url("/img/pizze.webp");
+    background-image: url("https://ctf.francescomancuso.it/tpsit/pizzeriaWeb/img/pizze.webp");
     background-position: 50% 80%;
 }
 
 .pagina .sezione.dolci .titolo {
-    background-image: url("/img/dolci.webp");
+    background-image: url("https://ctf.francescomancuso.it/tpsit/pizzeriaWeb/img/dolci.webp");
     background-position: 50% 70%;
 }
 
 .pagina .sezione.bevande .titolo {
-    background-image: url("/img/bevande.webp");
+    background-image: url("https://ctf.francescomancuso.it/tpsit/pizzeriaWeb/img/bevande.webp");
     background-position: 50% 50%;
 }
 
