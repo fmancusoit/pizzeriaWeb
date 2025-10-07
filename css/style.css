@@ -1,24 +1,130 @@
-
-
 body {
-    background-color: hsl(202, 61%, 93%);
-    color: hsl(195, 100%, 13%);
-    margin: 0;
-    padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--secondario);
+    color: var(--primario);
+    font-family: "Lexend", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
 }
 
-
-header {
-
+a {
+    color: var(--primario);
 }
 
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+header .container,
+.menu,
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.menu ul {
+    gap: 1.5rem;
+}
 
 .logo {
-    
+    display: flex;
+    align-items: center;
 }
 
+.logo img {
+    height: 3rem;
+}
 
-.menu {
+.menu ul {
+    list-style-type: none;
+    text-align: center;
+}
 
+header .menu a {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.top {
+    background-image: url("/img/header.webp");
+}
+
+.top .overlay {
+    padding: 6rem 0;
+    padding-top: 11rem;
+    background-color: var(--p-glass);
+    color: #fff;
+    text-align: center;
+    font-size: 120%;
+}
+
+.pagina .sezione {
+    margin: 4rem 0;
+}
+
+.pagina .sezione .box {
+    border: 1px solid var(--primario);
+    border-radius: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-self: center;
+    background-color: #fff;
+}
+
+.pagina .sezione .box .testo, 
+.pagina .sezione .box .prezzo {
+    padding: 1rem;
+}
+
+.pagina .sezione .box img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.pagina .sezione .box .testo {
+    flex-grow: 4;
+    width: 100%;
+    padding-bottom: 0;
+}
+
+.pagina .sezione .box .prezzo {
+    width: 100%;
+    text-align: right;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+footer {
+    background-color: var(--primario);
+    color: var(--secondario);
+    padding: 1rem 0;
+    text-align: center;
+    font-weight: 200;
+    font-size: 90%;
+}
+
+footer .container {
+    opacity: 0.8;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+footer i {
+    font-size: 90%;
 }

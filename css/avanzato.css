@@ -1,0 +1,167 @@
+:root {
+    --primario: hsl(195, 100%, 13%);
+    --scuro: hsl(195, 100%, 8%);
+    --secondario: hsl(202, 61%, 93%);
+    --p-glass: hsla(195, 100%, 13%, 0.75);
+    --s-glass: hsla(202, 61%, 93%, 0.75);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px
+}
+
+@supports (-moz-appearance:none) {
+
+    *,
+    *::before,
+    *::after {
+        scrollbar-color: var(--scuro) var(--secondario);
+        scrollbar-width: thin;
+        scrollbar-width: 5px
+    }
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondario);
+    padding: 1px
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scuro);
+    border-radius: 10px;
+    transition: all 200ms ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scuro);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a:target {
+    position: relative;
+}
+
+a:target::before {
+    content: "";
+    display: block;
+    height: 5rem;
+    margin-top: -5rem;
+    pointer-events: none;
+}
+
+header {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    transition: all 200ms ease-in-out;
+    user-select: none;
+    margin: 0 auto;
+    border-radius: 1rem;
+    max-width: 1400px;
+}
+
+header.fixed {
+    background-color: var(--p-glass);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    top: 5px;
+    max-width: 1350px;
+    width: 95%;
+}
+
+header .container {
+    max-width: 100%;
+    width: 100%;
+}
+
+.pagina .sezione .box .prezzo {
+    white-space: nowrap;
+}
+
+.pagina .sezione, .top {
+    user-select: none;
+    pointer-events: none;
+}
+
+.pagina .sezione .griglia {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .pagina .sezione .griglia {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .pagina .sezione .griglia {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .pagina .sezione .griglia {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    header {
+        font-size: 80%;
+    }
+}
+
+
+.pagina .sezione .titolo {
+    background-size: cover;
+    border: 1px solid var(--primario);
+    border-radius: 1rem;
+}
+
+.pagina .sezione .titolo .overlay {
+    background-color: var(--s-glass);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.pagina .sezione.pizze .titolo {
+    background-image: url("/img/pizze.webp");
+    background-position: 50% 80%;
+}
+
+.pagina .sezione.dolci .titolo {
+    background-image: url("/img/dolci.webp");
+    background-position: 50% 70%;
+}
+
+.pagina .sezione.bevande .titolo {
+    background-image: url("/img/bevande.webp");
+    background-position: 50% 50%;
+}
+
+.pagina .sezione .box .immagine {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}

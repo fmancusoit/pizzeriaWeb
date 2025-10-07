@@ -5,47 +5,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Rondine</title>
+    <title>Menù La Rondine</title>
 
-    <link rel="stylesheet" href="/css/style.css" >
+    <meta name="author" content="Francesco Mancuso">
+    <meta name="theme-color" content="#003242" />
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/avanzato.css">
+    <script src="/js/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c2497a668c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="/img/logo.jpg">
-        </div>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="/"><img src="/img/logo-menu-white.png"></a>
+            </div>
 
-        <div class="menu">
-            <ul>
-                <li>Home</li>
-                <li>Pizze</li>
-                <li>Dolci</li>
-                <li>Bevande</li>
-            </ul>
+            <div class="menu">
+                <ul>
+                    <a href="#pizze">
+                        <li><i class="fa-solid fa-pizza-slice"></i> Pizze</li>
+                    </a>
+                    <a href="#dolci">
+                        <li><i class="fa-solid fa-ice-cream"></i> Dolci</li>
+                    </a>
+                    <a href="#bevande">
+                        <li><i class="fa-solid fa-martini-glass-citrus"></i> Bevande</li>
+                    </a>
+                </ul>
+            </div>
         </div>
     </header>
 
     <div class="top">
-        <h1>Menù</h1>
+        <div class="overlay">
+            <div class="container">
+                <h1>Menù</h1>
+            </div>
+        </div>
     </div>
 
+    <div class="pagina">
+        <div class="container">
 
-    <div class="pizze">
+            <div class="sezione pizze">
+                <a name="pizze"></a>
+                <div class="titolo">
+                    <div class="overlay">
+                        <h2>Pizze</h2>
+                    </div>
+                </div>
+                <div class="griglia">
 
+                    <!-- INSERISCI PIZZE QUI -->
+                    <!-- duplica l'elemento box con copia-incolla e modifica i dati -->
+
+                    <div class="box">
+                        <div class="immagine">
+                            <img src="/img/pizze.webp" alt="TITOLO QUI">
+                        </div>
+                        <div class="testo">
+                            <h3>TITOLO QUI</h3>
+                            <p>DESCRIZIONE PRODOTTO QUI</p>
+                        </div>
+                        <span class="prezzo">€ 6,00</span>
+                    </div>
+
+                    <!-- FINE SEZIONE PIZZE -->
+
+                </div>
+            </div>
+
+            <div class="sezione dolci">
+                <a name="dolci"></a>
+                <div class="titolo">
+                    <div class="overlay">
+                        <h2>Dolci</h2>
+                    </div>
+                </div>
+                <div class="griglia">
+
+                    <!-- INSERISCI DOLCI QUI -->
+                    <!-- duplica l'elemento box con copia-incolla e modifica i dati -->
+
+                    <div class="box">
+                        <div class="immagine">
+                            <img src="/img/pizze.webp" alt="TITOLO QUI">
+                        </div>
+                        <div class="testo">
+                            <h3>TITOLO QUI</h3>
+                            <p>DESCRIZIONE PRODOTTO QUI</p>
+                        </div>
+                        <span class="prezzo">€ 6,00</span>
+                    </div>
+
+                    <!-- FINE SEZIONE DOLCI -->
+
+                </div>
+            </div>
+
+            <div class="sezione bevande">
+                <a name="bevande"></a>
+                <div class="titolo">
+                    <div class="overlay">
+                        <h2>Bevande</h2>
+                    </div>
+                </div>
+                <div class="griglia">
+
+                    <!-- INSERISCI BIBITE QUI -->
+                    <!-- duplica l'elemento box con copia-incolla e modifica i dati -->
+
+                    <div class="box">
+                        <div class="immagine">
+                            <img src="/img/menu/bibite/acqua-naturale.webp" alt="Acqua Naturale">
+                        </div>
+                        <div class="testo">
+                            <h3>Acqua Naturale</h3>
+                            <p>Bottiglia da 1L</p>
+                        </div>
+                        <span class="prezzo">€ 2,00</span>
+                    </div>
+
+                    <div class="box">
+                        <div class="immagine">
+                            <img src="/img/menu/bibite/acqua-frizzante.webp" alt="Acqua Frizzante">
+                        </div>
+                        <div class="testo">
+                            <h3>Acqua Frizzante</h3>
+                            <p>Bottiglia da 1L</p>
+                        </div>
+                        <span class="prezzo">€ 2,00</span>
+                    </div>
+
+                    <div class="box">
+                        <div class="immagine">
+                            <img src="/img/menu/bibite/cocacola.webp" alt="Coca Cola">
+                        </div>
+                        <div class="testo">
+                            <h3>Coca Cola</h3>
+                            <p>Lattina da 0,35L</p>
+                        </div>
+                        <span class="prezzo">€ 2,50</span>
+                    </div>
+
+                    <div class="box">
+                        <div class="immagine">
+                            <img src="/img/menu/bibite/cocacola-zero.webp" alt="Coca Cola Zero">
+                        </div>
+                        <div class="testo">
+                            <h3>Coca Cola Zero</h3>
+                            <p>Lattina da 0,35L</p>
+                        </div>
+                        <span class="prezzo">€ 2,50</span>
+                    </div>
+
+                    <div class="box">
+                        <div class="immagine">
+                            <img src="/img/menu/bibite/fanta.webp" alt="Fanta">
+                        </div>
+                        <div class="testo">
+                            <h3>Fanta</h3>
+                            <p>Lattina da 0,35L</p>
+                        </div>
+                        <span class="prezzo">€ 2,50</span>
+                    </div>
+
+                    <div class="box">
+                        <div class="immagine">
+                            <img src="/img/menu/bibite/sprite.webp" alt="Sprite">
+                        </div>
+                        <div class="testo">
+                            <h3>Sprite</h3>
+                            <p>Lattina da 0,35L</p>
+                        </div>
+                        <span class="prezzo">€ 2,50</span>
+                    </div>
+
+                    <div class="box">
+                        <div class="immagine">
+                            <img src="/img/menu/bibite/birra-piccola.webp" alt="Birra alla spina">
+                        </div>
+                        <div class="testo">
+                            <h3>Birra alla spina</h3>
+                            <p>Formato piccolo</p>
+                        </div>
+                        <span class="prezzo">€ 3,50</span>
+                    </div>
+
+                    <div class="box">
+                        <div class="immagine">
+                            <img src="/img/menu/bibite/birra-grande.webp" alt="Birra alla spina">
+                        </div>
+                        <div class="testo">
+                            <h3>Birra alla spina</h3>
+                            <p>Formato grande</p>
+                        </div>
+                        <span class="prezzo">€ 4,50</span>
+                    </div>
+
+                    <!-- FINE SEZIONE BIBITE -->
+
+                </div>
+            </div>
+
+        </div>
     </div>
 
-
-    <div class="dolci">
-
-    </div>
-
-
-    <div class="bevande">
-
-    </div>
-
-
+    <footer>
+        <div class="container">
+            <p>Gruppo di lavoro Corea, Talarico, Vampore, Mancuso</p>
+            <p>Classe 5E A.S. 2025/2026</p>
+            <p><i>Server at <a href="https://www.francescomancuso.it" target="_blank">www.francescomancuso.it</a> on Port 443</i></p>
+        </div>
+    </footer>
 
 </body>
 
