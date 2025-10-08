@@ -1,9 +1,38 @@
+/**
+ * Style CSS Avanzato
+ * www.francescomancuso.it
+*/
+
+
+/******************
+ * ROOT
+ ******************
+*/
+
+body,
+p,
+a,
+span,
+input,
+select,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+    font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 :root {
     --primario: hsl(195, 100%, 13%);
     --scuro: hsl(195, 100%, 8%);
     --secondario: hsl(202, 61%, 93%);
     --p-glass: hsla(195, 100%, 13%, 0.75);
-    --s-glass: hsla(202, 61%, 93%, 0.75);
+    --p-glass-dark: hsla(195, 100%, 13%, 0.95);
+    --s-glass: hsla(202, 61%, 93%, 0.55);
 }
 
 *,
@@ -56,10 +85,35 @@ a:target {
 a:target::before {
     content: "";
     display: block;
-    height: 5rem;
-    margin-top: -5rem;
+    height: 6.8rem;
+    margin-top: -6.8rem;
     pointer-events: none;
 }
+
+button {
+    background-color: var(--primario);
+    color: var(--secondario);
+    border-radius: 2rem;
+    padding: 0.5rem 0.6rem;
+    border: 1px solid;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/******************
+ * HEADER
+ ******************
+*/
 
 header {
     color: #fff;
@@ -74,16 +128,16 @@ header {
     transition: all 200ms ease-in-out;
     user-select: none;
     margin: 0 auto;
-    border-radius: 1rem;
-    max-width: 1400px;
+    border-radius: 1.5rem;
+    max-width: 1250px;
 }
 
 header.fixed {
     background-color: var(--p-glass);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    top: 5px;
-    max-width: 1350px;
+    top: 0.5rem;
+    max-width: 1250px;
     width: 95%;
 }
 
@@ -92,20 +146,109 @@ header .container {
     width: 100%;
 }
 
-.pagina .sezione .box .prezzo {
-    white-space: nowrap;
+/******************
+ * PAGINA
+ ******************
+*/
+
+.pagina {
+    overflow: hidden;
 }
 
-.pagina .sezione, .top {
+.pagina .sezione,
+.top {
     user-select: none;
-    pointer-events: none;
 }
+
+.pagina .presentazione {
+    background-color: var(--primario);
+    color: #fff;
+    width: 95%;
+    margin: 4rem auto;
+    border-radius: 2rem;
+    background-image: url("https://ctf.francescomancuso.it/tpsit/pizzeriaWeb/img/texture.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pagina .presentazione .overlay {
+    background-color: var(--p-glass-dark);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+.pagina .presentazione h2 {
+    color: var(--secondario);
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+.pagina .presentazione .testo {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-wrap: balance;
+}
+
+.pagina .presentazione .buttons {
+    flex-grow: 1;
+    align-items: flex-end;
+    margin-top: 1rem;
+}
+
+.pagina .presentazione button {
+    background-color: var(--secondario);
+    color: var(--primario);
+}
+
+.pagina .presentazione img {
+    display: block;
+    margin: -0.5rem -3rem -0.5rem 0;
+    width: 16rem;
+    height: auto;
+    pointer-events: none;
+    animation: gira 15000ms linear 50ms infinite forwards;
+}
+
+@keyframes gira {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .pagina .presentazione .overlay {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .pagina .presentazione img {
+        margin: 0rem 0rem -3rem 0;
+    }
+}
+
+/******************
+ * GRIGLIA
+ ******************
+*/
 
 .pagina .sezione .griglia {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -132,17 +275,22 @@ header .container {
     }
 }
 
-
 .pagina .sezione .titolo {
     background-size: cover;
     border: 1px solid var(--primario);
-    border-radius: 1rem;
+    border-radius: 1.5rem;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.2rem;
 }
 
 .pagina .sezione .titolo .overlay {
     background-color: var(--s-glass);
-    padding: 1rem;
-    border-radius: 1rem;
+    padding: 1.5rem 1rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .pagina .sezione.pizze .titolo {
@@ -160,8 +308,111 @@ header .container {
     background-position: 50% 50%;
 }
 
+/******************
+ * BOX
+ ******************
+*/
+
+.pagina .sezione .box .prezzo {
+    white-space: nowrap;
+}
+
 .pagina .sezione .box .immagine {
     display: flex;
     align-items: center;
     flex-grow: 1;
+    pointer-events: none;
+}
+
+.pagina .sezione .box {
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 601px) {
+    .pagina .sezione .box:hover,
+    .pagina .sezione .box:focus {
+        transform: scale(1.08) rotate(4deg) translateY(-1.48rem);
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .pagina .sezione .box:hover {
+        transform: translateY(-0.6rem);
+        z-index: 1;
+    }
+}
+
+/******************
+ * ELEMENTI
+ ******************
+*/
+
+.totop {
+    border: 0;
+    border-radius: 2rem;
+    color: var(--secondario);
+    background-color: var(--scuro);
+    padding: 0.55rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.3rem;
+    line-height: 1;
+    position: fixed;
+    bottom: 4rem;
+    right: 1.5rem;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 200ms ease-in-out;
+}
+
+.totop.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: hsla(195, 100%, 13%, 1);
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    transition: all 200ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loader.ready {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader img {
+    width: 14rem;
+    height: auto;
+    animation: pulse 1000ms linear 50ms infinite forwards;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
