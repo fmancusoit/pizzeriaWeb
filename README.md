@@ -1,56 +1,71 @@
 # Progetto "PizzeriaWeb"
 
-## Gruppo
-Lavoro di Gruppo Corea, Mancuso, Talarico, Vampore 
+## Introduzione
+
+Realizzazione di un sito web per un ristorante con l'obiettivo di mostrare il menù di pizzeria, dolci e bevande.
+
+Lo scopo del progetto è la collaborazione sul codice, utilizzando lo strumento Git per il controllo versione. La repository in comune è gestita in cloud dalla piattaforma GitHub.
+
+## Gruppo di lavoro
 
 Classe 5E A.S. 2025/2026
 
-### Ruoli
+- **Menù pizze**: Corea Marco
 
-**Menù pizze**: Marco
+- **Menù dolci**: Vampore Giulia
 
-**Menù dolci**: Giulia
+- **Menù bevande**: Talarico Roberto / Mancuso Francesco Giuseppe
 
-**Menù bevande**: Roberto / Francesco
+- **Project Manager**: Mancuso Francesco Giuseppe
 
-**Project Manager**: Francesco
+## Funzionalità
 
-## Descrizione
+Il template del sito web è stato realizzato appositamente senza l'utilizzo di AI generativa e/o framework, per ottenere una pagina efficiente e leggera, con un comportamento grafico specifico.
 
-Menù online realizzato con l'utilizzo collaborativo di Git con repository gestita in cloud da GitHub.
+La pagina è suddivisa in sezioni, ciascuna curata da un membro del gruppo utilizzando spazi appositi.
 
-Utilizzo di HTML + CSS + JS
+Ogni sezione contiene una griglia delle voci del menù, visualizzata utilizzando codice CSS3 responsive, seguendo gli standard più recenti.
 
-## Relazione
+Per una consultazione più rapida e orientata all'UX (User Experience) è stato aggiunto sempre nel template codice JavaScript per ottimizzazioni.
 
-### Preparazione
+## Implementazione e stack tecnologico
 
-Lo scopo del progetto è di realizzare un piccolo sito web con prodotti di una pizzeria. 
-Abbiamo suddiviso il lavoro gestendo le varie sezioni, preparando inizialmente un template e poi evidenziato la modifica delle sezioni.
+Nella realizzazione della pagina sono stati adottati i linguaggi HTML5, CSS3 e JavaScript. La versione online è ospitata su un server VPS alimentato da LiteSpeed.
 
-Il template è realizzato interamente a mano, utilizzando sezioni responsive seguendo gli ultimi standard di CSS3.
+Il contenuto della pagina, la crittografia SSL/TLS e i DNS sono gestiti da CloudFlare.
 
-Ho aggiunto anche un piccolo codice JavaScript per gestire l'animazione del menù in alto.
+## Suddivisione del lavoro nel gruppo
 
-Gli elementi sono disposti a griglia, con colonne variabili sulla base della dimensione dello schermo del client.
+Abbiamo stabilito una base di dati da inserire nella pagina, organizzata e gestita da Corea Marco, il quale ha organizzato i prodotti da inserire all'interno di un file Word condiviso. Per ogni prodotto ha scritto Nome, descrizione e prezzo.
 
-### Lavoro
+Successivamente il resto del gruppo ha lavorato nell'inserimento dei prodotti nel template, rispettando il codice HTML e inserendo le immagini scaricate dal web.
 
-Marco ha organizzato i prodotti da inserire nel menù preparando un file Word. Per ogni prodotto ha scritto Nome, descrizione e prezzo.
-Ha poi lavorato alla sua sezione, le pizze, associato ad ogni prodotto un'immagine trovata sul web oppure presa direttamente dal ristorante "La Rondine".
+## Compatibilità cross-browser e responsive
 
-Giulia ha utilizzato il file Word per inserire i prodotti della sezione "dolci", associando ad ogni prodotto un'immagine presa dal web.
+Sono presenti all'interno del foglio di stile (CSS) alcune regole dedicate alla compatibilità con browser Safari, il quale adopera il motore WebKit.
 
-Francesco e Roberto hanno invece lavorato alla sezione delle bevande.
+Inoltre, per garantire una navigazione ottimale anche da dispositivi mobili, sono presenti delle "media query" di CSS per gestire le colonne della griglia dei prodotti.
+
+## Allegati
+
+### Screenshot
+
+![Screenshot PizzaWeb](https://ctf.francescomancuso.it/tpsit/pizzeriaWeb/screenshot.png)
+
+### Versione online
+
+La versione online è consultabile dall'URL [https://ctf.francescomancuso.it/tpsit/pizzeriaWeb/](https://ctf.francescomancuso.it/tpsit/pizzeriaWeb/)
 
 ### Struttura del progetto
 
 ```
 /
+│   .gitignore
 │   favicon.png
 │   index.html
 │   README.md
-│
+│   screenshot.png
+│   
 ├───css
 │       avanzato.css
 │       style.css
@@ -61,7 +76,9 @@ Francesco e Roberto hanno invece lavorato alla sezione delle bevande.
 │   │   header.webp
 │   │   logo-menu-black.png
 │   │   logo-menu-white.png
+│   │   pizza.webp
 │   │   pizze.webp
+│   │   texture.svg
 │   │
 │   ├───favicon
 │   │       apple-touch-icon.png
@@ -73,7 +90,12 @@ Francesco e Roberto hanno invece lavorato alla sezione delle bevande.
 │       ├───bibite
 │       │       acqua-frizzante.webp
 │       │       acqua-naturale.webp
-│       │       ...
+│       │       birra-grande.webp
+│       │       birra-piccola.webp
+│       │       cocacola-zero.webp
+│       │       cocacola.webp
+│       │       fanta.webp
+│       │       sprite.webp
 │       │
 │       ├───dolci
 |       |       ...
@@ -82,7 +104,3 @@ Francesco e Roberto hanno invece lavorato alla sezione delle bevande.
 └───js
         script.js
 ```
-
-### Versione online
-
-La versione online è consultabile dall'URL [https://ctf.francescomancuso.it/tpsit/pizzeriaWeb/](https://ctf.francescomancuso.it/tpsit/pizzeriaWeb/)
