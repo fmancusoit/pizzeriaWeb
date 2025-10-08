@@ -36,7 +36,7 @@ Il contenuto della pagina, la crittografia SSL/TLS e i DNS sono gestiti da Cloud
 
 ## Suddivisione del lavoro nel gruppo
 
-Abbiamo stabilito una base di dati da inserire nella pagina, organizzata e gestita da Corea Marco, il quale ha organizzato i prodotti da inserire all'interno di un file Word condiviso. Per ogni prodotto ha scritto Nome, descrizione e prezzo.
+È stata definita una base di dati da inserire nella pagina, organizzata e gestita da Corea Marco, il quale ha organizzato i prodotti da inserire all'interno di un file Word condiviso. Per ogni prodotto ha scritto Nome, descrizione e prezzo.
 
 Successivamente il resto del gruppo ha lavorato nell'inserimento dei prodotti nel template, rispettando il codice HTML e inserendo le immagini scaricate dal web.
 
@@ -54,7 +54,7 @@ Inoltre, per garantire una navigazione ottimale anche da dispositivi mobili, son
 
 ### Versione online
 
-La versione online è consultabile dall'URL [https://ctf.francescomancuso.it/tpsit/pizzeriaWeb/](https://ctf.francescomancuso.it/tpsit/pizzeriaWeb/)
+La versione online è consultabile dall'URL <a href="https://ctf.francescomancuso.it/tpsit/pizzeriaWeb/" target="_blank">ctf.francescomancuso.it/tpsit/pizzeriaWeb/</a>
 
 ### Struttura del progetto
 
