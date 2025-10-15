@@ -63,7 +63,7 @@ header .menu a {
 */
 
 .top {
-    background-image: url("https://ctf.francescomancuso.it/tpsit/pizzeriaWeb/img/header.webp");
+    background-image: url("https://ctf.francescomancuso.it/webserver/tpsit/pizzeriaWeb/img/header.webp");
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -98,6 +98,7 @@ header .menu a {
     border: 1px solid var(--primario);
     border-radius: 1rem;
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -127,6 +128,10 @@ header .menu a {
     flex-grow: 4;
     width: 100%;
     padding-bottom: 0;
+}
+
+.pagina .sezione .box .testo p {
+    font-size: 92%;
 }
 
 .pagina .sezione .box .prezzo {
