@@ -50,11 +50,11 @@ Inoltre, per garantire una navigazione ottimale anche da dispositivi mobili, son
 
 ### Screenshot
 
-![Screenshot PizzaWeb](https://ctf.francescomancuso.it/tpsit/pizzeriaWeb/screenshot.png)
+![Screenshot PizzaWeb](https://ctf.francescomancuso.it/webserver/tpsit/pizzeriaWeb/screenshot.png)
 
 ### Versione online
 
-La versione online è consultabile dall'URL <a href="https://ctf.francescomancuso.it/tpsit/pizzeriaWeb/" target="_blank">ctf.francescomancuso.it/tpsit/pizzeriaWeb/</a>
+La versione online è consultabile dall'URL <a href="https://ctf.francescomancuso.it/webserver/tpsit/pizzeriaWeb/" target="_blank">ctf.francescomancuso.it/webserver/tpsit/pizzeriaWeb</a>
 
 ### Struttura del progetto
 
@@ -90,17 +90,38 @@ La versione online è consultabile dall'URL <a href="https://ctf.francescomancus
 │       ├───bibite
 │       │       acqua-frizzante.webp
 │       │       acqua-naturale.webp
+│       │       birra-becks.webp
+│       │       birra-corona.webp
 │       │       birra-grande.webp
+│       │       birra-ichnusa.webp
+│       │       birra-leffe-rossa.webp
+│       │       birra-nastro-azzurro.webp
 │       │       birra-piccola.webp
+│       │       birra-tennents.webp
+│       │       birra-tuborg.webp
 │       │       cocacola-zero.webp
 │       │       cocacola.webp
 │       │       fanta.webp
 │       │       sprite.webp
 │       │
 │       ├───dolci
-|       |       ...
+│       │       cannolo_sbriciolato.webp
+│       │       crostata_alla_frutta.jpg
+│       │       tartufo_di_pizzo.jpg
+│       │       tiramisu.jpg
+│       │
 │       └───pizze
-|               ...
+│               bufalina.webp
+│               crazy-wurstel.webp
+│               margherita.webp
+│               mortazza.webp
+│               new-mexico.webp
+│               pistacchiosa.webp
+│               porchettosa.webp
+│               rondine.webp
+│               tropeana.webp
+│               zuccotta.webp
+│
 └───js
         script.js
 ```
