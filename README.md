@@ -1,3 +1,8 @@
+# ⚒️ MOVED
+
+Questa repository è stata trasferita e verrà ora gestita e aggiornata qui:
+[https://git.vps.francescomancuso.it/francesco/pizzeriaWeb](https://git.vps.francescomancuso.it/francesco/pizzeriaWeb)
+
 # Progetto "PizzeriaWeb"
 
 ## Introduzione
